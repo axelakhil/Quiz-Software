@@ -1,0 +1,30 @@
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#username{
+	padding:2rem;
+	margin:2rem;
+	 width: 20rem;
+  height: 4rem;
+ border:0.1rem solid #56a5eb;
+ border-radius: 10rem;
+animation: text-focus-in 2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+
+}
+#usename
